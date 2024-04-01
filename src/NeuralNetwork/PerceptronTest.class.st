@@ -30,7 +30,7 @@ PerceptronTest >> newNeuron [
 	^ Neuron new
 ]
 
-{ #category : #'instance creation' }
+{ #category : #tests }
 PerceptronTest >> testAND [
 	| p |
 	p := self newNeuron.
@@ -76,7 +76,7 @@ PerceptronTest >> testNOT [
 	self assert: (p feed: #(0)) equals: 1.
 ]
 
-{ #category : #'instance creation' }
+{ #category : #tests }
 PerceptronTest >> testOR [ 
 	| p |
 	p := self newNeuron.
@@ -89,7 +89,7 @@ PerceptronTest >> testOR [
 	self assert: (p feed: #(1 1)) equals: 1.
 ]
 
-{ #category : #'instance creation' }
+{ #category : #tests }
 PerceptronTest >> testSmallExample [
 	| p result |
 	p := self newNeuron.
