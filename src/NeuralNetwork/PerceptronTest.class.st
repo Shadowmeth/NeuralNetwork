@@ -26,8 +26,8 @@ PerceptronTest >> digitalComparator: inputs [
 
 { #category : #'instance creation' }
 PerceptronTest >> newNeuron [
-	"Return a new neuron."
-	^ Neuron new
+	"Return a new neuron with the step activation function."
+	^ Neuron new step
 ]
 
 { #category : #tests }
