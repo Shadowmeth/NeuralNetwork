@@ -48,6 +48,18 @@ Neuron >> learningRate: aLearningRateAsFloat [
 ]
 
 { #category : #'as yet unclassified' }
+Neuron >> sigmoid [
+	"Use the sigmoid activation function"
+	activationFunction := SigmoidAF new.
+]
+
+{ #category : #'as yet unclassified' }
+Neuron >> step [
+	"Use the step activation function"
+	activationFunction := StepAF new.
+]
+
+{ #category : #'as yet unclassified' }
 Neuron >> train: inputs desiredOutput: desiredOutput [
 	| diff output delta |
 	
