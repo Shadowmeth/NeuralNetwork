@@ -32,7 +32,8 @@ Neuron >> feed: inputs [
 { #category : #accessing }
 Neuron >> initialize [
 	super initialize.
-	learningRate := 0.1
+	learningRate := 0.1.
+	self sigmoid
 ]
 
 { #category : #accessing }
